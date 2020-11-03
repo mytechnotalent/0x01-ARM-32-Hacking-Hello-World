@@ -62,13 +62,49 @@ Hello World!
 r2 -d ./0x01_arm_32_hacking_hello_world
 ```
 
-## STEP 10: Run Radare2 - Debug Step 1
+## STEP 10: Run Radare2 - Debug Step 1 [Examine Binary @ Entry Point]
 ```
 aaa
 s entry0
 vv
 ```
 ![image](https://github.com/mytechnotalent/0x01_arm_32_hacking_hello_world/blob/main/1.png?raw=true)
+
+## STEP 10: Run Radare2 - Debug Step 2 [Examine str]
+```
+q
+[0x00010074]> pf S @0x00010094
+0x00010094 = 0x00010094 -> 0x00020098 "Hello World!
+A"
+```
+
+## STEP 11: Run Radare2 - Debug Step 3 [Hack str]
+```
+w Hacked World\n @0x00020098
+```
+
+## STEP 12: Run Radare2 - Debug Step 4 [Review Hack]
+```
+[0x00010074]> pf S @0x00010094
+0x00010094 = 0x00010094 -> 0x00020098 "Hacked World
+A"
+```
+
+## STEP 13: Run Radare2 - Debug Step 5 [Hack Binary Permanently]
+```
+q
+r2 -w ./0x01_arm_32_hacking_hello_world
+r2 -w ./0x01_arm_32_hacking_hello_world
+[0x00010074]> w Hacked World\n @0x00020098
+[0x00010074]> q
+
+```
+
+## STEP 14: Prove Hack
+```
+./0x01_arm_32_hacking_hello_world
+Hacked World
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
