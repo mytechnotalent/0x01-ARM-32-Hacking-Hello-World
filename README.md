@@ -43,19 +43,32 @@ exit:
 hello_world:                        .ascii "Hello World!\n"
 ```
 
-## STEP 6: Save File As - 0x01_arm_32_hacking_hello_world.s
+## STEP 6: Save File As - 0x01_arm_32_hacking_hello_world.s [:wq]
 
 ## STEP 7: Build & Link
-```bash
+```
 as -o 0x01_arm_32_hacking_hello_world.o 0x01_arm_32_hacking_hello_world.s
 ld -o 0x01_arm_32_hacking_hello_world 0x01_arm_32_hacking_hello_world.o
 ```
 
 ## STEP 8: Run Binary
-```bash
+```
 kali@kali:~/Documents/0x01_arm_32_hacking_hello_world$ ./0x01_arm_32_hacking_hello_world
 Hello World!
 ```
+
+## STEP 9: Run Radare2 - Debug Mode
+```
+r2 -d ./0x01_arm_32_hacking_hello_world
+```
+
+## STEP 10: Run Radare2 - Debug Step 1
+```
+aaa
+s entry0
+vv
+```
+![image](https://github.com/mytechnotalent/0x01_arm_32_hacking_hello_world/blob/main/1.png?raw=true)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
