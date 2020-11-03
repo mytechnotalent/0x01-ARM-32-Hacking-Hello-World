@@ -1,6 +1,7 @@
+![image](https://github.com/mytechnotalent/0x01_arm_32_hacking_hello_world/blob/main/RPI32AAHHW.png?raw=true)
+
 # 0x01_arm_32_hacking_hello_world
 ARM 32-bit Raspberry Pi Hacking Hello World example in Kali Linux.
-
 
 ## Schematic
 ![image](https://github.com/mytechnotalent/0x01_arm_32_hacking_hello_world/blob/main/schematic.png?raw=true)
@@ -19,11 +20,30 @@ ARM 32-bit Raspberry Pi Hacking Hello World example in Kali Linux.
 ## STEP 3: Flash Kali Linux ARM Image
 [Watch YT Null Byte Video](https://www.youtube.com/watch?v=Jquf9BDm4iU&t=493s)
 
-## STEP 4: Plug micro:bit Into Computer
-***PLUG IN USB CABLE TO COMPUTER AND DEVICE***
+## STEP 4: Power Up RPI & Login
+***POWER UP DEVICE AND LOGIN AS KALI AND SET UP SSH***
 
-## STEP 5: Open Mu IDE
+## STEP 5: Create File In VIM
+```
+.global _start
 
+_start:
+    mov R0, #1                      @ 1 = stdout
+    ldr R1, =hello_world            @ str pointer
+    mov R2, #13                     @ str len
+    mov R7, #4                      @ linux write syscall
+    svc 0                           @ software interrupt call write
+
+exit:
+    mov R0, #0                      @ return code
+    mov R7, #1                      @ linux exit syscall
+    svc 0                           @ software interrupt call exit
+
+.data
+hello_world:                        .ascii "Hello World!\n"
+```
+
+## STEP 6: Save File As - 0x01_arm_32_hacking_hello_world.s
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
