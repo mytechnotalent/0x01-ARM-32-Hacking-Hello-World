@@ -1,0 +1,2 @@
+as -o 0x01_arm_32_hacking_hello_world.o 0x01_arm_32_hacking_hello_world.s
+ld -o 0x01_arm_32_hacking_hello_world 0x01_arm_32_hacking_hello_world.o
