@@ -94,7 +94,6 @@ A"
 ```
 q
 r2 -w ./0x01_arm_32_hacking_hello_world
-r2 -w ./0x01_arm_32_hacking_hello_world
 [0x00010074]> w Hacked World\n @0x00020098
 [0x00010074]> q
 
