@@ -45,6 +45,18 @@ hello_world:                        .ascii "Hello World!\n"
 
 ## STEP 6: Save File As - 0x01_arm_32_hacking_hello_world.s
 
+## STEP 7: Build & Link
+```bash
+as -o 0x01_arm_32_hacking_hello_world.o 0x01_arm_32_hacking_hello_world.s
+ld -o 0x01_arm_32_hacking_hello_world 0x01_arm_32_hacking_hello_world.o
+```
+
+## STEP 8: Run Binary
+```bash
+kali@kali:~/Documents/0x01_arm_32_hacking_hello_world$ ./0x01_arm_32_hacking_hello_world
+Hello World!
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
