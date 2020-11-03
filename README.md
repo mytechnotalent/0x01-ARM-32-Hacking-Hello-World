@@ -53,7 +53,7 @@ ld -o 0x01_arm_32_hacking_hello_world 0x01_arm_32_hacking_hello_world.o
 
 ## STEP 8: Run Binary
 ```
-kali@kali:~/Documents/0x01_arm_32_hacking_hello_world$ ./0x01_arm_32_hacking_hello_world
+./0x01_arm_32_hacking_hello_world
 Hello World!
 ```
 
