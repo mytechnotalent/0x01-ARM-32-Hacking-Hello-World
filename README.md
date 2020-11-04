@@ -28,6 +28,8 @@ ARM 32-bit Raspberry Pi Hacking Hello World example in Kali Linux.
 .global _start
 
 _start:
+
+print_hello_world:
     mov R0, #1                      @ 1 = stdout
     ldr R1, =hello_world            @ str pointer
     mov R2, #13                     @ str len
