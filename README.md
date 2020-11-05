@@ -72,7 +72,7 @@ vv
 ```
 ![image](https://github.com/mytechnotalent/0x01_arm_32_hacking_hello_world/blob/main/1.png?raw=true)
 
-## STEP 10: Run Radare2 - Debug Step 2 [Examine str]
+## STEP 11: Run Radare2 - Debug Step 2 [Examine str]
 ```
 q
 [0x00010074]> pf S @0x00010094
@@ -80,19 +80,19 @@ q
 A"
 ```
 
-## STEP 11: Run Radare2 - Debug Step 3 [Hack str]
+## STEP 12: Run Radare2 - Debug Step 3 [Hack str]
 ```
 w Hacked World\n @0x00020098
 ```
 
-## STEP 12: Run Radare2 - Debug Step 4 [Review Hack]
+## STEP 13: Run Radare2 - Debug Step 4 [Review Hack]
 ```
 [0x00010074]> pf S @0x00010094
 0x00010094 = 0x00010094 -> 0x00020098 "Hacked World
 A"
 ```
 
-## STEP 13: Run Radare2 - Debug Step 5 [Hack Binary Permanently]
+## STEP 14: Run Radare2 - Debug Step 5 [Hack Binary Permanently]
 ```
 q
 r2 -w ./0x01_arm_32_hacking_hello_world
@@ -101,7 +101,7 @@ r2 -w ./0x01_arm_32_hacking_hello_world
 
 ```
 
-## STEP 14: Prove Hack
+## STEP 15: Prove Hack
 ```
 ./0x01_arm_32_hacking_hello_world
 Hacked World
