@@ -12,7 +12,7 @@ ARM 32-bit Raspberry Pi Hacking Hello World example in Kali Linux.
 [Micro SD Card Reader/Writer](https://www.amazon.com/uni-Adapter-Supports-Compatible-MacBook/dp/B081VHSB2V)
 
 ## STEP 1: Download Kali Linux ARM Image - Raspberry Pi 32-bit
-[Download](https://images.kali.org/arm-images/kali-linux-2020.3a-rpi3-nexmon.img.xz)
+[Download](https://images.kali.org/arm-images/kali-linux-2020.4-rpi4-nexmon.img.xz) [https://www.offensive-security.com/kali-linux-arm-images/]
 
 ## STEP 2: Download balenaEtcher
 [Download](https://www.balena.io/etcher)
