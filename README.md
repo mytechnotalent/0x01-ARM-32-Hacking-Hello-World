@@ -3,6 +3,8 @@
 # 0x01_arm_32_hacking_hello_world
 ARM 32-bit Raspberry Pi Hacking Hello World example in Kali Linux.
 
+<br>
+
 ## Join DC540 Discord [HERE](https://discord.gg/TC9V9RCr5U)
 
 <br>
