@@ -3,6 +3,14 @@
 # 0x01_arm_32_hacking_hello_world
 ARM 32-bit Raspberry Pi Hacking Hello World example in Kali Linux.
 
+## Join DC540 Discord [HERE](https://discord.gg/TC9V9RCr5U)
+
+<br>
+
+## FREE Reverse Engineering Self-Study Course [HERE](https://github.com/mytechnotalent/Reverse-Engineering-Tutorial)
+
+<br>
+
 ## Schematic
 ![image](https://github.com/mytechnotalent/0x01_arm_32_hacking_hello_world/blob/main/schematic.png?raw=true)
 
